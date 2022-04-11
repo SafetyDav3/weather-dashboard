@@ -1,3 +1,10 @@
+
+var lat = null
+var long = null
+
+
+
+
 //
 //
 //
@@ -32,7 +39,15 @@ fetch(api)
   })
   .then(function (data) {
     console.log(data);
+    lat = data[0].lat;
+    long = data[0].lon;
+    console.log(lat);
+    console.log(long);
+    
   });
+  
+console.log(lat);
+console.log(long);
 
 // ↑←↓ Get current data  ↓→↑
 // ↑←↓ Attach current data to li's in "conditions-list"  ↓→↑
