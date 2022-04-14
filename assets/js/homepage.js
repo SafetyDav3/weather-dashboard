@@ -73,28 +73,26 @@ getLatLong();
 // ↑←↓ Store search history in localStorage  ↓→↑
 var cityNameHist = JSON.parse(localStorage.getItem("cityHist")) || [];
 
-var pastCityListEl = function(text){
-  var pastCity = document.querySelector('.past-city-li')
-  var createLiEl =  document.createElement('li')
-  createLiEl.textContent = text
-  pastCity.append(createLiEl)
-}
-
+var pastCityListEl = function (text) {
+  var pastCity = document.querySelector(".past-city-li");
+  var createLiEl = document.createElement("li");
+  createLiEl.setAttribute("class", "past-list");
+  createLiEl.textContent = text;
+  pastCity.append(createLiEl);
+};
 
 var submitBtn = document.querySelector(".search-btn");
 submitBtn.addEventListener("click", function () {
   var searchText = document.getElementById("city-search").value;
-  pastCityListEl(searchText)
+  pastCityListEl(searchText);
   cityNameHist.push(searchText);
   localStorage.setItem("cityHist", JSON.stringify(cityNameHist));
   console.log(cityNameHist);
 });
 
 for (let i = 0; i < cityNameHist.length; i++) {
-  pastCityListEl(cityNameHist[i])
+  pastCityListEl(cityNameHist[i]);
 }
-
-
 
 // ↑←↓ Get current data  ↓→↑
 // ↑←↓ Attach current data to li's in "conditions-list"  ↓→↑

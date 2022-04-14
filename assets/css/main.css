@@ -1,88 +1,127 @@
 :root {
-    --temp-border: 3px solid black;
-    --right-grad: #230555;
-    --left-grad: #3b6ec4;
+  --temp-border: 3px solid black;
+  --right-grad: #230555;
+  --left-grad: #3b6ec4;
+}
+
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* ↓↓↓ Remove default margin and padding ↓↓↓ */
 html * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Times New Roman", Times, serif;
-    background: gray;
+  font-family: "Times New Roman", Times, serif;
+  background: gray;
 }
 
 header {
-    /* border: var(--temp-border); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    background-image: linear-gradient(to right,
-            var(--left-grad),
-            var(--right-grad));
-    box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.4);
+  /* border: var(--temp-border); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-image: linear-gradient(
+    to right,
+    var(--left-grad),
+    var(--right-grad)
+  );
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.4);
 }
 
 .logo-title {
-    font-weight: bolder;
-    font-size: 3rem;
-    color: white;
-    text-shadow: 3px 6px 10px black;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 3px 6px 10px black;
 }
 
 .search-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    width: 20vw;
-    float: left;
-
+  width: 20vw;
+  float: left;
 }
 
 .search-area textarea {
-    width: 80%;
-    height: 2.2em;
+  width: 18vw;
+  height: 2.2em;
+  border-radius: 5px;
+  resize: none;
+  margin-top: 0.5em;
+  padding: 0.5em 0;
 }
 
 .search-area button {
-    width: 80%;
-    height: 2em;
-    font-weight: bold;
-    font-size: large;
-    background: #5aa2e9;
-    margin-top: 0.8em;
+  border: none;
+  border-radius: 4px;
+  width: 18vw;
+  height: 2em;
+  font-weight: bold;
+  font-size: large;
+  background: #5aa2e9;
+  margin-top: 0.8em;
 }
 
-
-
+.search-title {
+  margin: 0.5em 4em 0 0;
+}
 
 .big-box {
-    border: 2px solid black;
-    width: 78vw;
-    height: 23vh;
+  background: wheat;
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  border: 2px solid black;
+  width: 78vw;
+  height: 23vh;
 
-    float: right;
-    margin: 0.5em;
+  float: right;
+  margin: 0.5em;
 }
-
-
+.main-weather-title {
+  padding: 0.3em;
+}
 
 .weather-params-main li {
-    margin: 1.5em;
-    list-style: none;
+  margin: 1.5em;
+  list-style: none;
 }
-
 
 .divider {
-
-    width: 18vw;
-    margin-top: 1em;
-
+  width: 18vw;
+  margin-top: 1em;
 }
 
+.past-list {
+  display: flex;
+  justify-content: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  list-style: none;
+  margin: 1em;
+  padding: 10px;
+  background: wheat;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+}
+
+::placeholder {
+  font-size: 1.8em;
+  padding-left: 15px;
+}

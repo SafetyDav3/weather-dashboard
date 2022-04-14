@@ -2,14 +2,14 @@
 
 ## Mock-up and Criteria
 
-* Mock-up
+- Mock-up
 
-    ![Mock-up](./assets/images/README%20imgs/mock-up.png)
+  ![Mock-up](./assets/images/README%20imgs/mock-up.png)
 
-* Criteria
+- Criteria
 
-    ![Acceptance Criteria](./assets/images/README%20imgs/Criteria.png)
+  ![Acceptance Criteria](./assets/images/README%20imgs/Criteria.png)
 
-* Whiteboard
+- Whiteboard
 
     <img src="./assets/images/README%20imgs/Whiteboard.jpg" width=1000px>
